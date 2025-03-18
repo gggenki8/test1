@@ -1,0 +1,263 @@
+body{
+    font-family: "遊ゴシック";
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+.potelogo{
+    width: 11%;
+    height: auto;
+    position: relative; 
+    top: 10px;
+    left: 18px;
+    margin: 15px;
+}
+.potelogo:hover{
+    opacity: 0.8;
+}
+
+.HeaderNAVI{
+    display: flex;                     /*横並び*/
+    justify-content: ftex-end;         /*右端に寄せる*/
+    gap: 40px;                         /*各リンクの間にスペース*/
+    align-items: center;               /*縦方向に中央揃え*/
+    position: absolute;                /*ヘッダーを上部に固定*/
+    top: 0;                            /*位置調整*/
+    right: 10px;
+    padding: 10px;                     /*ヘッダーの余白*/
+    text-align: center;
+    font-size: 12px;
+    font-family: Arial;
+}
+a{
+    color: inherit;                    /*リンクの色を変更しない*/
+    text-decoration: none              /*リンクの下線を消す*/
+}
+.HeaderNavisistem_5{
+    border: 5px solid orange;
+    border-radius: 50px;
+    background-color: orange;
+    padding: 8px 15px;
+    color: white;
+}
+li{
+   list-style: none;
+}
+.HeaderNAVI li:first-child a:hover {
+  opacity: 0.8; 
+}
+.HeaderNAVI li:nth-child(2) a:hover {
+    opacity: 0.8; 
+}
+.HeaderNAVI li:nth-child(3) a:hover {
+    opacity: 0.8; 
+}
+.HeaderNAVI li:nth-child(4) a:hover {
+    opacity: 0.8; 
+}
+.HeaderNAVI li:nth-child(5) a:hover {
+    opacity: 0.8; 
+}
+.HeaderNAVI li:nth-child(6) a:hover {
+    opacity: 0.8;
+}
+.firstViewContent{
+    position: absolute;
+    align-items: center;
+    padding-left: 0%;
+    width: 100vw;
+    margin-top: 15px;
+    background: linear-gradient(to bottom, #EEEEEE 1%, white 3%);
+    overflow: hidden;
+}
+.lefttop{
+    position: relative;
+    bottom: 247px;
+    width: 280px;
+}
+.rightbottom{
+    position: relative;
+    top: 150px;
+    left: 335px;
+}
+.human {
+    position: absolute;
+    width: 45%;
+    height: auto;
+    bottom: 259px;
+    left: 940px;
+}
+
+.FirstViewContent_title{
+    position: relative;
+    font-size: 2.5rem;
+    text-align: left;
+    left: 350px;
+    bottom: 330px;
+
+}
+.saport1{
+    position: relative;
+    top: 90px;
+    right: 340px;
+}
+.FirstView_img{
+    position: relative;
+    bottom: 205px;
+    right: 55px;
+}
+.firstView_botton{
+    border: 5px solid orange;
+    border-radius: 50px;
+    background-color: orange;
+    padding: 20px 120px;
+    color: white;
+    position: relative;
+    bottom: 330px;
+    left: 350px;
+}
+.firstView_botton:hover{
+    opacity: 0.8; /* 最初のリンクの透明度を80%に変更 */
+}
+.FirstView_option{
+    position: relative;
+    bottom: 300px;
+    left: 350px;
+    font-size: 0.7rem;
+}
+
+@media (max-width: 1080px) {
+    .potelogo {
+        width: 19%; /* ロゴサイズを調整 */
+    }
+    .HeaderNAVI {
+        display: none;
+    }
+    .FirstViewContent_title {
+        left: 50px;
+        bottom: 700px;
+        z-index: 3;
+    }
+    .firstView_botton {
+        left: 50px;
+        bottom: 700px;
+        z-index: 3;
+    }
+    .FirstView_option {
+        left: 50px;
+        bottom: 680px;
+        z-index: 3;
+    }
+    .rightbottom{
+        top: -250px;
+        left: 680px;
+    }
+    .FirstView_img{
+        right: 350px;
+        z-index: 10;
+    }
+    .human{
+        width: 80%;
+        left: 210px;
+        bottom: 600px;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 780px) {
+    .potelogo {
+        width: 23%;
+    }
+    .lefttop{
+        width: 65%;
+    }
+    .FirstViewContent_title {
+        left: 40px;
+        bottom: 1250px;
+        z-index: 3;
+    }
+    .firstView_botton {
+        left: 40px;
+        bottom: 1250px;
+        z-index: 3;
+    }
+    .FirstView_option {
+        left: 40px;
+        bottom: 1220px;
+        z-index: 3;
+    }
+    .rightbottom{
+        width: 50%;
+        top: -750px;
+        left: 385px;
+    }
+    .FirstView_img{
+        bottom: 720px;
+        right: 80px;
+        z-index: 10;
+
+    }
+    .human{
+        width: 100%;
+        left: 15px;
+        bottom: 1230px;
+        z-index: 1;
+    }
+    .saport1{
+        left: -60px;
+        top: -450px;
+    }
+}
+
+@media (max-width: 480px) {
+    .potelogo {
+        width: 35%;
+        left: -1px;
+    }
+    .lefttop{
+        width: 85%;
+    }
+    .FirstViewContent_title {
+        font-size: 130%;
+        left: 15px;
+        top: -350px;
+        z-index: 10;
+    }
+    .firstView_botton {
+        font-size: 100%;
+        left: 10px;
+        top: -330px;
+        padding: 20px 90px;
+        z-index: 3;
+    }
+    .FirstView_option {
+        font-size: 70%;
+        left: 1px;
+        top: -300px;
+        margin: 15px;
+        z-index: 3;
+    }
+    .rightbottom{
+        display: none;
+    }
+    .FirstView_img{
+        width: 25%;
+        top: -250px;
+        left: 10px;
+        z-index: 10;
+    }
+    .human{
+        width: 70%;
+        left: 130px;
+        top: 0px;
+        z-index: 1;
+    }
+    .saport1{
+        width: 55%;
+        top: -370px;
+        left: 50px;
+    }
+}
