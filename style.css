@@ -18,7 +18,25 @@ html, body {
 .potelogo:hover{
     opacity: 0.8;
 }
-
+.hamburger{
+    display: frex;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 20px;
+    transform: scaleX(2);
+    cursor: pointer;
+    top: 12px;
+    left: 500px;
+    position: absolute;
+}
+.hamburger span{
+    display: block;
+    height: 4px;
+    margin-bottom: 2px;
+    border-radius: 2px;
+    color: gray
+}
 .HeaderNAVI{
     display: flex;                     /*横並び*/
     justify-content: ftex-end;         /*右端に寄せる*/
@@ -136,6 +154,10 @@ li{
     .HeaderNAVI {
         display: none;
     }
+    .hamburger{
+        display: block;
+        left: 1000px;
+    }
     .FirstViewContent_title {
         left: 50px;
         bottom: 700px;
@@ -170,6 +192,9 @@ li{
 @media (max-width: 780px) {
     .potelogo {
         width: 23%;
+    }
+    .hamburger{
+        left: 720px;
     }
     .lefttop{
         width: 65%;
@@ -216,6 +241,9 @@ li{
     .potelogo {
         width: 35%;
         left: -1px;
+    }
+    .hamburger{
+        left: 400px;
     }
     .lefttop{
         width: 85%;
